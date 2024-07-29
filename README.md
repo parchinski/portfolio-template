@@ -1,6 +1,6 @@
 # Portfolio
 
-Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Framer motion
+Minimalist portfolio using Next.js 14, React, TailwindCSS, Framer motion
 
 # Features
 
