@@ -24,14 +24,7 @@
       "typescript": { "project": "./" }
     }
   },
-  "plugins": [
-    "react-hooks",
-    "react",
-    "@typescript-eslint",
-    "jsx-a11y",
-    "import",
-    "unicorn"
-  ],
+  "plugins": ["react-hooks", "react", "@typescript-eslint", "jsx-a11y", "import", "unicorn"],
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -83,7 +76,7 @@
     "unicorn/throw-new-error": "error",
     "prefer-const": "off",
     "array-callback-return": ["error", { "allowImplicit": true }],
-    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "semi": ["error", "always"],
     "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/unbound-method": "off",
@@ -95,13 +88,16 @@
     "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
     "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
     "@typescript-eslint/no-empty-function": "off",
-    "@typescript-eslint/restrict-template-expressions": ["error", {
-      "allowNumber": true,
-      "allowBoolean": true,
-      "allowAny": false,
-      "allowNullish": false,
-      "allowRegExp": true
-    }]
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowNumber": true,
+        "allowBoolean": true,
+        "allowAny": false,
+        "allowNullish": false,
+        "allowRegExp": true
+      }
+    ]
   },
   "overrides": [
     {
@@ -119,10 +115,7 @@
         ],
         "react/prop-types": ["off"],
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [
-          "error",
-          { "extensions": [".jsx", ".tsx"] }
-        ],
+        "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
         "import/order": ["error"]
       }
     }
